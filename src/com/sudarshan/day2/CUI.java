@@ -2,11 +2,11 @@ package com.sudarshan.day2;
 
 public class CUI {
 
-	public static String USERNAME = "user";
-	public static String PASSWORD = "pass";
+	public static String userNameDatabase = "user";
+	public static String passwordDatabase = "pass";
 	
 	public static Boolean validateUser(String userName, String password) {
-		if (userName.equals(USERNAME) && password.equals(PASSWORD)) {
+		if (userName.equals(userNameDatabase) && password.equals(passwordDatabase)) {
 			System.out.println("Welcome " + userName);
 			return true;
 		}

@@ -4,22 +4,16 @@ import java.util.Scanner;
 
 public class Date {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner input = new Scanner(System.in);
-		String date = input.nextLine();
-		input.close();
-		getDate(date);
-	}
+
 
 	public static String getDate(String date) {
 		String month;
-		String[] Date = date.split(",");
-		if (Integer.parseInt(Date[0]) > 31) {
+		String[] splittedDate = date.split(",");
+		if (Integer.parseInt(splittedDate[0]) > 31) {
 			System.out.println("Wrong Date");
 			return "Wrong";
 		}
-		switch (Date[1]) {
+		switch (splittedDate[1]) {
 		case "01":
 			month = "January";
 			break;
@@ -60,8 +54,8 @@ public class Date {
 			System.out.println("Wrong Date");
 			return "Wrong";
 		}
-		System.out.println(Date[0] + "/" + month + "/" + Date[2]);
-		return Date[0] + "/" + month + "/" + Date[2];
+		System.out.println(splittedDate[0] + "/" + month + "/" + splittedDate[2]);
+		return splittedDate[0] + "/" + month + "/" + splittedDate[2];
 		
 	}
 

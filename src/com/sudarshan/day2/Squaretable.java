@@ -3,7 +3,7 @@ package com.sudarshan.day2;
 public class Squaretable {
 	
 	public static String printSquare(int number)  {
-		if(Validate(number)) {
+		if(validateData(number)) {
 			System.out.println(number +"*1="+number*1 +","+"Square="+number*number);
 			return number +"*1="+number*1 +","+"Square="+number*number;
 		} else {
@@ -12,7 +12,7 @@ public class Squaretable {
 		}
 	}
 	
-	public static Boolean Validate(int number) {
+	public static Boolean validateData(int number) {
 		if(number <= 0) {
 			return false;
 		}
