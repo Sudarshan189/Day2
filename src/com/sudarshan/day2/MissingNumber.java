@@ -17,7 +17,7 @@ public class MissingNumber {
 	}
 
 	// Finding length //0 1 2
-	public static int missingNumber(int[] array) { // 0 1 2
+	public static int missingNumber(int[] array) {
 		array = bubblesort(array);
 		int i = 0;
 		for (i = 1; i < array.length; i++) {
@@ -28,7 +28,6 @@ public class MissingNumber {
 		}
 		System.out.println(array[i - 1] + 1);
 		return array[i - 1] + 1;
-
 	}
 
 }
